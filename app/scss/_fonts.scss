@@ -1,0 +1,25 @@
+//<Шрифт по умолчанию>===========================================================================================================================================================================
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff'),
+			 url('../fonts/Montserrat-Regular.woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.woff'),
+			 url('../fonts/Montserrat-SemiBold.woff2');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.woff'),
+			 url('../fonts/Montserrat-Bold.woff2');
+	font-weight: 700;
+}
+
+$fontfamily: 'Montserrat', sans-serif;
+//</Шрифт по умолчанию>==========================================================================================================================================================================
