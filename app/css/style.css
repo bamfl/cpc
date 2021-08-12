@@ -705,7 +705,7 @@ body {
   display: block;
   text-align: center;
   max-width: 745px;
-  margin: 0 auto 30px;
+  margin: 0 auto 0px;
 }
 
 .vitrina__titles {
@@ -725,7 +725,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 57.7%;
           flex: 0 1 57.7%;
-  margin: 103px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
   padding: 0px 0px 0px 180px;
 }
 
@@ -741,7 +741,7 @@ body {
 
 .vitrina__list li .text {
   padding: 0px 0px 0px 62px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .vitrina__image {
@@ -816,7 +816,7 @@ body {
 
 .variants {
   background-color: #000;
-  padding: 82px 0;
+  padding: 115px 0;
 }
 
 .variants__subtitle {
@@ -879,13 +879,11 @@ body {
 }
 
 .cases__btn {
-  margin: 0px 0px 85px 0px;
+  margin: 0;
 }
 
 .cases__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin: 0 -60px;
 }
 
@@ -989,7 +987,7 @@ body {
 
 .footer {
   background: #000000 url("../images/02.svg") 0 0/cover no-repeat;
-  padding: 61px 0;
+  padding: 120px 0;
 }
 
 .footer__subtitle {
@@ -1017,17 +1015,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__policy {
   font-weight: 600;
   font-size: 18px;
-  padding: 0px 0px 0px 90px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  margin: 0 auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .footer__socials {
@@ -1062,7 +1068,7 @@ body {
     max-width: 1200px;
   }
   .container-big {
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .intro__title, .intro__text {
     max-width: 600px;
@@ -1103,10 +1109,6 @@ body {
   }
   .text {
     font-size: 20px;
-  }
-  .containerm,
-  .container-big {
-    max-width: 100%;
   }
   .intro .container::before {
     position: absolute;
