@@ -606,6 +606,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .why__image {
@@ -648,9 +651,13 @@ body {
   position: absolute;
   width: 55px;
   height: 30px;
-  top: 5px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   left: -100px;
   background: url("../images/04.svg") 0 0/cover no-repeat;
+  margin: 5px 0px 0px 0px;
 }
 
 .why__list li:nth-child(2)::before {
@@ -658,10 +665,14 @@ body {
   position: absolute;
   width: 55px;
   height: 50px;
-  top: 5px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   left: -100px;
   background: url("../images/04.svg") 0 0/cover no-repeat;
   background-position: 0 -75px;
+  margin: 5px 0px 0px 0px;
 }
 
 .why__list li:nth-child(3)::before {
@@ -669,10 +680,14 @@ body {
   position: absolute;
   width: 55px;
   height: 50px;
-  top: 5px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   left: -100px;
   background: url("../images/04.svg") 0 0/cover no-repeat;
   background-position: 0 -167px;
+  margin: 5px 0px 0px 0px;
 }
 
 .vitrina {
@@ -801,7 +816,7 @@ body {
 
 .variants {
   background-color: #000;
-  padding: 88px 0 77px;
+  padding: 82px 0;
 }
 
 .variants__subtitle {
@@ -850,7 +865,7 @@ body {
 
 .cases {
   background: #000000 url("../images/02.svg") 0 0/cover no-repeat;
-  padding: 63px 0 168px;
+  padding: 115px 0;
 }
 
 .cases .container {
@@ -911,7 +926,7 @@ body {
 
 .faq {
   background-color: #000;
-  padding: 107px 0 135px;
+  padding: 121px 0;
 }
 
 .faq__subtitle {
@@ -1400,18 +1415,29 @@ body {
     font-size: 24px;
   }
   .subtitle {
-    font-size: 24px;
+    font-size: 22px;
   }
   .text {
     font-size: 18px;
   }
+  .intro {
+    padding: 30px 0;
+  }
+  .intro__logo {
+    margin: 0px auto 30px;
+  }
   .intro__title {
-    padding: 110% 0 0 0;
+    padding: 75% 0 0 0;
     margin: 0px 0px 15px 0px;
   }
   .intro .container::before {
     background: url("../images/01.svg") -30px 0/contain no-repeat;
-    width: calc(100% - 60px);
+    width: calc(100% - 85px);
+    top: 90px;
+    padding: 0 0 60% 0;
+  }
+  .intro__text {
+    margin: 0px 0px 20px 0px;
   }
   .variants__icon {
     width: 96px;
@@ -1452,7 +1478,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 20px 0px;
   }
   .why {
     padding: 32px 0 0;
@@ -1462,6 +1488,9 @@ body {
   }
   .why__subtitle {
     margin: 0 0 25px 0;
+  }
+  .why__image {
+    padding: 0 0 70% 0;
   }
   .why__list li {
     margin: 0px 0px 27px 90px;
@@ -1485,16 +1514,22 @@ body {
     padding: 40px 0 66px;
   }
   .vitrina__titles {
-    bottom: -200px;
+    bottom: -160px;
+  }
+  .vitrina__image {
+    padding: 0px 0px 80% 0px;
   }
   .vitrina__list {
-    margin: 200px 0px 0px 0px;
+    margin: 140px 0px 0px 0px;
   }
   .vitrina__list li {
-    padding: 0;
+    padding: 0 15px;
   }
   .vitrina__list li .text {
     padding: 0px 0px 0px 15px;
+  }
+  .start .container {
+    padding: 0 45px;
   }
   .start__subtitle {
     margin: 0px 0px 30px 0px;
@@ -1502,17 +1537,23 @@ body {
   .cases {
     padding: 10px 0 50px;
   }
+  .cases .container {
+    padding: 0 45px;
+  }
   .cases__subtitle {
     margin: 0 auto 15px;
   }
   .cases__name, .cases__text {
     text-align: center;
   }
+  .faq .container-big {
+    padding: 0 45px;
+  }
   .faq__accordion .arrow {
     margin: 0;
     width: 24px;
     height: 24px;
-    top: 25px;
+    top: 11px;
   }
   .faq__accordion .arrow img {
     position: absolute;
@@ -1525,7 +1566,13 @@ body {
   }
   .faq__accordion .text {
     padding: 0px 25px 0px 0px;
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .faq .accordion-item {
+    padding: 10px 0;
+  }
+  .footer {
+    padding: 20px 0;
   }
   .footer__policy {
     font-size: 14px;

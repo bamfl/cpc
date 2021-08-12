@@ -3,11 +3,15 @@ const accordionItems = accordion.querySelectorAll('.accordion-item');
 
 const accordionHandler = (item) => {
   accordionItems.forEach((el) => {
-    el.classList.remove('active');
-
-    if (item === el) {
-      el.classList.add('active');
-    }
+		if (!item.classList.contains('active')) {
+			el.classList.remove('active');	
+	
+			if (item === el) {
+				el.classList.add('active');
+			}
+		} else {
+			el.classList.remove('active');	
+		}
   });
 };
 
